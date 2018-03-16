@@ -1,19 +1,19 @@
 version: 1.0
-name: hello-world-apb
-description: deploys hello-world web application
+name: last-operation-demo-apb
+description: deploys an application demonstrating the use of the Last Operation Module
 bindable: False
 async: optional
 metadata:
-  displayName: Hello World (APB)
-  longDescription: A sample APB which deploys a containerized Hello World web application
+  displayName: Last Operation Demo (APB)
+  longDescription: A sample APB which deploys a containerized Hello World web application demonstrating Last Operation
   dependencies: ['docker.io/ansibleplaybookbundle/hello-world:latest']
   providerDisplayName: "Red Hat, Inc."
 plans:
   - name: default
-    description: A sample APB which deploys Hello World
+    description: A sample APB demonstrating the Last Operation module
     free: True
     metadata:
       displayName: Default
-      longDescription: This plan deploys a Python web application displaying Hello World
+      longDescription: This plan deploys a Python web application displaying Hello World demonstrating Last Operation
       cost: $0.00
     parameters: []

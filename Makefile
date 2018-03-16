@@ -1,11 +1,11 @@
 CONTEXT = ansibleplaybookbundle
 VERSION = v0.1
-IMAGE_NAME = hello-world-apb
+IMAGE_NAME = last-operation-demo-apb
 TARGET = centos7
 REGISTRY = docker-registry.default.svc.cluster.local
 OC_USER = developer
 OC_PASS = developer
-APB_APP = hello-world
+APB_APP = last-operation-demo
 
 # Allow user to pass in OS build options
 ifeq ($(TARGET),rhel7)
