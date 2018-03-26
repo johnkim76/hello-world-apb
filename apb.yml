@@ -16,4 +16,11 @@ plans:
       displayName: Default
       longDescription: This plan deploys a Python web application displaying Hello World
       cost: $0.00
-    parameters: []
+    parameters:
+      - name: enable_failure
+        required: true
+        title: Enable APB Failure
+        description: 'Cause the APB provision to Fail to demo Custom Error Messaging in WebUI'
+        enum: [true, false]
+        type: enum
+        default: false

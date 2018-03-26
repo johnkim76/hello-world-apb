@@ -1,2 +1,4 @@
 ---
 namespace: "{{ lookup('env','NAMESPACE') | default('hello-world', true) }}"
+invalid_namespace: "{{ lookup('env','INVALID_NAMESPACE') | default('invalid-namespace', true) }}"
+terminationMessagePathFile: "{{ lookup('env','TERMINATIONMSGPATHFILE') | default('/dev/termination-log', true) }}"
